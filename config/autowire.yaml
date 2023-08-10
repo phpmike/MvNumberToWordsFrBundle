@@ -1,0 +1,11 @@
+services:
+    _defaults:
+        autowire: true      # Automatically injects dependencies in your services.
+        autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
+    Mv\NumberWordsFrBundle\Converter\:
+        resource: '../src/Converter'
+    Mv\NumberWordsFrBundle\Twig\:
+        resource: '../src/Twig'
+    Mv\NumberWordsFrBundle\Twig\IntToWordsFrExtension\:
+        tags: ['twig.extension']
+        resource: '../src/Twig/IntToWordsFrExtension.php'

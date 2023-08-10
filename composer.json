@@ -1,0 +1,33 @@
+{
+    "name": "mv/number-words-fr-bundle",
+    "type": "symfony-bundle",
+    "description": "Convert to words any integer in french",
+    "keywords": ["number", "integer", "words", "writing", "number words convertion"],
+    "homepage": "https://github.com/phpmike/MvNumberWordsFrBundle",
+    "license": "GPL-3.0-only",
+    "authors": [
+        {
+            "name": "Michael VEROUX",
+            "homepage": "https://github.com/phpmike"
+        }
+    ],
+    "archive": {
+        "exclude": ["Tests/", "build/", "/.travis.yml", "/build.xml", "phpunit.xml.dist"]
+    },
+    "autoload": {
+        "psr-4": { "Mv\\NumberWordsFrBundle\\": "src/" }
+    },
+    "require": {
+        "php": ">=7.4.30",
+        "symfony/framework-bundle": "^5.0|^6.0",
+        "mv/number-words-fr": ">=1.0"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": ">=9.6.10"
+    }
+}
